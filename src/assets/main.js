@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 
 // Ajax request to the Report Card URL
 $.ajax({
@@ -32,7 +32,7 @@ var addCourses = function(coursesArray) {
     $('<a></a>', {
       href: course.url,
       target: '_blank',
-      class: 'btn btn-primary',
+      'class': 'btn btn-primary',
       text: 'See Course'
     }).appendTo($course);
   });
