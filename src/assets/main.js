@@ -17,9 +17,7 @@ var addCourses = function(coursesArray) {
 
   coursesArray.forEach(function(course) {
     //div with .course class
-    var $course = $('<div></div>',{
-      'class':'course'
-    }).appendTo($badges);
+    var $course = $('<div class="course"></div>').appendTo($badges);
     //h3 header with title attribute
     $('<h3></h3>', {
       text: course.title
